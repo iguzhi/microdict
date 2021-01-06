@@ -1,0 +1,2 @@
+# enum
+javascript enum
