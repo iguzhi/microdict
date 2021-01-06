@@ -1,2 +1,2 @@
-# enum
-javascript enum
+# micro dict
+javascript micro dict

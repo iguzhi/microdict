@@ -1,6 +1,7 @@
 class Dict {
 
   constructor() {
+    this.version = '__VERSION__';
     this.valueIndex = {};
     this.aliasIndex = {};
     this.textIndex = {};
