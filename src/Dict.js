@@ -78,7 +78,8 @@ class Dict {
    * @return {string} 对应的文字
    */
   getTextFromValue(value) {
-    return this.fromValue(value).text;
+    const item = this.fromValue(value) || {};
+    return item.text;
   }
 
   /**
@@ -88,7 +89,8 @@ class Dict {
    * @return {string} 对应的文字
    */
   getTextFromAlias(alias) {
-    return this.fromAlias(alias).text;
+    const item = this.fromAlias(alias) || {};
+    return item.text;
   }
 
   /**
@@ -98,7 +100,8 @@ class Dict {
    * @return {number|string} 对应的值
    */
   getValueFromAlias(alias) {
-    return this.fromAlias(alias).value;
+    const item = this.fromAlias(alias) || {};
+    return item.value;
   }
 
   /**
@@ -108,7 +111,8 @@ class Dict {
    * @return {number|string} 对应的值
    */
   getValueFromText(text) {
-    return this.fromText(text).value;
+    const item = this.fromText(text) || {};
+    return item.value;
   }
 
   /**
@@ -118,7 +122,8 @@ class Dict {
    * @return {string} 对应的别名
    */
   getAliasFromValue(value) {
-    return this.fromValue(value).alias;
+    const item = this.fromValue(value) || {};
+    return item.alias;
   }
 
   /**
@@ -128,7 +133,8 @@ class Dict {
    * @return {string} 对应的别名
    */
   getAliasFromText(text) {
-    return this.fromText(text).alias;
+    const item = this.fromText(text) || {};
+    return item.alias;
   }
 
   /**
